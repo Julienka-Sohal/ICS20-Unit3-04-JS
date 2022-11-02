@@ -21,9 +21,9 @@ if (navigator.serviceWorker) {
 // input
 function calculateClicked() {
   const radius = parseFloat(document.getElementById("Radius").value)
-  
+
   // process
-  const volume = 4 / 3 * Math.PI * radius ** 3
+  const volume = (4 / 3) * Math.PI * radius ** 3
 
   // output
   document.getElementById("Volume").innerHTML =
