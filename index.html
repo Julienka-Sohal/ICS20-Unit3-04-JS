@@ -4,11 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Calculating the Volume of Pyramid" />
+    <meta name="description" content="Volume of Sphere with JS" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Julienka-Sohal" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>Volume of Pyramid, with JS</title>
+    <title>Volume of Sphere, with JS</title>
     <link
       rel="canonical"
       href="https://Julienka-Sohal.github.io/ICS20-Unit3-03-JS/"
@@ -52,7 +52,7 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title"
-            >Volume of Right Rectangular Pyramid, with JS</span
+            >Volume of Sphere, with JS</span
           >
         </div>
       </header>
@@ -63,70 +63,33 @@
             <th>
               <tr>
                 <img
-                  src="./images/pyramid.png"
-                  alt="pyramid"
-                  width="30%"
-                  height="23.25%"
+                  src="./images/Sphere.png"
+                  alt="Sphere"
+                  width="45%"
+                  height="45%"
                 />
               </tr>
               <h2>Formula:</h2>
-              <h3>V = ( L x W x H ) / 3</h3>
+              <h3>V = 4 ÷ 3 x π x r³</h3>
               <h4>Enter the following dimentions below:</h4>
             </th>
           </tr>
         </table>
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Length (cm)</p>
+          <p>Raduis (cm)</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="number"
               step="any"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="Length"
+              id="Radius"
             />
-            <label class="mdl-textfield__label" for="Length"
-              >Length (cm)...</label
-            >
+            <label class="mdl-textfield__label" for="Raduis">Radius (cm)...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-        <!-- Numeric Textfield #2 -->
-        <form action="#">
-          <p>Width (cm)</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step="any"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="Width"
-            />
-            <label class="mdl-textfield__label" for="Width"
-              >Width (cm)...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <!-- Numeric Textfield #2 -->
-        <form action="#">
-          <p>Height (cm)</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step="any"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="Height"
-            />
-            <label class="mdl-textfield__label" for="Height"
-              >Height (cm)...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br />
         <!--raised button with ripple-->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"

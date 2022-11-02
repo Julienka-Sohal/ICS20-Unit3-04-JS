@@ -20,14 +20,12 @@ if (navigator.serviceWorker) {
  */
 // input
 function calculateClicked() {
-  const length = parseFloat(document.getElementById("Length").value)
-  const width = parseFloat(document.getElementById("Width").value)
-  const height = parseFloat(document.getElementById("Height").value)
-
+  const radius = parseFloat(document.getElementById("Radius").value)
+  
   // process
-  const volume = (length * width * height) / 3
+  const volume = 4 / 3 * Math.PI * radius ** 3
 
   // output
   document.getElementById("Volume").innerHTML =
-    "The volume of this Pyramid is " + volume.toFixed(2) + "cm³."
+    "The volume of this Pyramid is " + volume.toFixed(2) + " cm³."
 }
