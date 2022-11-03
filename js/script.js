@@ -27,5 +27,5 @@ function calculateClicked() {
 
   // output
   document.getElementById("Volume").innerHTML =
-    "The volume of this Pyramid is " + volume.toFixed(2) + " cm³."
+    "The volume of this Sphere is " + volume.toFixed(2) + " cm³."
 }
