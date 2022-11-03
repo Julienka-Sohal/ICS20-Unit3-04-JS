@@ -16,7 +16,7 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * calculates the volume of the pyramid
+ * converts the fahrenheit to Celsius
  */
 // input
 function calculateClicked() {
