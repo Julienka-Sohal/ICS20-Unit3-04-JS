@@ -1,4 +1,4 @@
-// Copyright (c) 2020 Julienka Sohal All rights reserved
+// Copyright (c) 202 Julienka Sohal All rights reserved
 //
 // Created by: Julienka Sohal
 // Created on: Oct 2022
@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit3-03-JS/sw.js", {
-    scope: "/ICS20-Unit3-03-JS/",
+  navigator.serviceWorker.register("/ICS20-Unit3-04-JS/sw.js", {
+    scope: "/ICS20-Unit3-04-JS/",
   })
 }
 
@@ -20,12 +20,12 @@ if (navigator.serviceWorker) {
  */
 // input
 function calculateClicked() {
-  const radius = parseFloat(document.getElementById("Radius").value)
+  const fahrenheit = parseFloat(document.getElementById("Fahrenheit").value)
 
   // process
-  const volume = (4 / 3) * Math.PI * radius ** 3
+  const temp = ( fahrenheit - 32 ) * 5 / 9
 
   // output
-  document.getElementById("Volume").innerHTML =
-    "The volume of this Sphere is " + volume.toFixed(2) + " cm³."
+  document.getElementById("Temp").innerHTML =
+    "The the temperature in Celsius is " + temp.toFixed(2) + " °C."
 }

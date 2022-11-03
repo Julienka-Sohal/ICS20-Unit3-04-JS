@@ -4,16 +4,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Volume of Sphere with JS" />
+    <meta name="description" content="Temperature Calculations, with JS" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Julienka-Sohal" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>Volume of Sphere, with JS</title>
+    <title>Temperature Calculations, with JS</title>
     <link
       rel="canonical"
-      href="https://Julienka-Sohal.github.io/ICS20-Unit3-03-JS/"
+      href="https://Julienka-Sohal.github.io/ICS20-Unit3-04-JS/"
     />
-    <link rel="manifest" href="/ICS20-Unit3-03-JS/manifest.webmanifest" />
+    <link rel="manifest" href="/ICS20-Unit3-04-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -51,7 +51,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Volume of Sphere, with JS</span>
+          <span class="mdl-layout-title">Temperature Calculations, with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -61,31 +61,31 @@
             <th>
               <tr>
                 <img
-                  src="./images/Sphere.png"
-                  alt="Sphere"
-                  width="45%"
-                  height="45%"
+                  src="./images/temp.jpg"
+                  alt="temp"
+                  width="34.5%"
+                  height="46%"
                 />
               </tr>
               <h2>Formula:</h2>
-              <h3>V = 4 ÷ 3 x π x r³</h3>
-              <h4>Enter the following dimentions below:</h4>
+              <h3>(°F − 32) × 5/9 = °C</h3>
+              <h4>Enter the following dimensions below:</h4>
             </th>
           </tr>
         </table>
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Radius (cm)</p>
+          <p>Temperature (°F)</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="number"
               step="any"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="Radius"
+              id="Fahrenheit"
             />
-            <label class="mdl-textfield__label" for="Radius"
-              >Radius (cm)...</label
+            <label class="mdl-textfield__label" for="Fahrenheit"
+              >Temperature (°F)...</label
             >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
@@ -100,7 +100,7 @@
         <br />
         <br />
         <div>
-          <div id="Volume"></div>
+          <div id="Temp"></div>
         </div>
       </main>
     </div>
