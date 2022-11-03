@@ -23,7 +23,7 @@ function calculateClicked() {
   const fahrenheit = parseFloat(document.getElementById("Fahrenheit").value)
 
   // process
-  const temp = ( fahrenheit - 32 ) * 5 / 9
+  const temp = ((fahrenheit - 32) * 5) / 9
 
   // output
   document.getElementById("Temp").innerHTML =
